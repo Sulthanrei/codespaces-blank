@@ -1,0 +1,14 @@
+import { Alchemy } from 'alchemy-sdk';
+
+const alchemy = new Alchemy();
+
+async function main() {
+      const ownerAddress = 'sitrwear.eth';
+        for await (const nft of alchemy.nft.getNftsForOwnerIterator(0xfd26F741563eE935865491B63d4c2401b81a18Dc)) {
+                console.log('ownedNft:', nft);
+                  }
+                  }
+
+                  main();
+        }
+}
